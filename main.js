@@ -5,6 +5,7 @@ import { setupCounter } from './counter.js';
 import { MD5 } from 'crypto-js';
 
 console.log(MD5('text to hash').toString());
+console.log('env = ', import.meta.env);
 
 document.querySelector('#app').innerHTML = `
   <div>
